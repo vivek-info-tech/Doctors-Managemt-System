@@ -10,7 +10,7 @@ export default function Navbar() {
   return (
 	<div className=' flex justify-between items-center  text-sm border-b py-4 mb-5 border-b-gray-400'>
 		
-		<img className='w-44 cursor-pointer' src={assets.logo} alt="" />
+		<img onClick={()=>navigate('/')} className='w-44 cursor-pointer' src={assets.logo} alt="" />
 		<ul className=' hidden md:flex items-start gap-5 font-medium' >
 			<NavLink to='/'>
 				<li  className='py-1'>HOME</li>
