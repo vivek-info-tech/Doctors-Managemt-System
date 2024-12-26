@@ -5,8 +5,9 @@ import { doctors } from "../assets/assets";
 
  export const AppContext=createContext()
  const AppContextProvider=(props)=>{
+	const curensysmbol="$"
 	const value={
-		doctors
+		doctors,curensysmbol
 	}
 	return(
 		<AppContext.Provider value={value}>

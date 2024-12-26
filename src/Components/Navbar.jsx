@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { assets } from '../assets/assets'
-import { Navigate, NavLink, useNavigate } from 'react-router-dom'
- 
+import {   NavLink, useNavigate } from 'react-router-dom'
+
 export default function Navbar() {
 
 	const navigate= useNavigate();

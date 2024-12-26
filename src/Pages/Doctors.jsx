@@ -33,7 +33,7 @@ export default function Doctors() {
         <div className=' w-full grid grid-cols-auto gap-4 gap-y-6 '>
           {
             fillterDoc.map((item,index)=>(
-              <div onClick={()=>navigate(`/appointment/${ item._id}`)}  className='border border-blue-200 rounded-xl overflow-hidden cursor-pointer hover:scale-105 transition-all'>
+              <div key={index} onClick={()=>navigate(`/appointment/${ item._id}`)}  className='border border-blue-200 rounded-xl overflow-hidden cursor-pointer hover:scale-105 transition-all'>
                 <img  className=' bg-blue-50'src={item.image} alt="" />
                 <div className='p-4'>
                   <div className='flex items-center gap-2 text-sm text-center text-green-500'>
